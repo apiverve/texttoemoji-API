@@ -1,0 +1,83 @@
+openapi: 3.0.4
+info:
+  title: Text to Emoji
+  description: Text to Emoji is a simple tool for converting text into emojis. It returns the emojis that represent the given text.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/texttoemoji:
+    post:
+      summary: Convert Text to Emoji
+      description: Text to Emoji is a simple tool for converting text into emojis. It returns the emojis that represent the given text.
+      operationId: texttoemoji
+      parameters: []
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  emojis:
+                  - "\U0001F448\U0001F3FE"
+                  - "✨\U0001F44F"
+                  - "\U0001F525\U0001F44F\U0001F3FD"
+                  - "\U0001F44A\U0001F3FE\U0001F4AA\U0001F3FE"
+                  - "\U0001F525\U0001F919\U0001F3FC"
+                  - "\U0001F90C\U0001F3FD\U0001F525"
+                  - "\U0001F929\U0001F44F\U0001F3FB"
+                  - "\U0001F601\U0001F4DA\U0001F64C"
+                  - "\U0001F61E"
+                  - "\U0001F449\U0001F3FD\U0001F448\U0001F3FD"
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                text:
+                  type: string
+                  description: The text you want converted into emojis
+                  example: I am so excited to go to the lake and swim
+              required:
+              - text
+              example:
+                text: I am so excited to go to the lake and swim
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
