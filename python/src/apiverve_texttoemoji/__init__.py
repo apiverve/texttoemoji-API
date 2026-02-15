@@ -1,1 +1,3 @@
-from .apiClient import TexttoemojiAPIClient
+from .apiClient import TexttoemojiAPIClient, TexttoemojiAPIClientError
+
+__all__ = ['TexttoemojiAPIClient', 'TexttoemojiAPIClientError']
