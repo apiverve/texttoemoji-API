@@ -10,20 +10,14 @@ if os.path.exists(requirements_file):
 
 setup(
     name='apiverve_texttoemoji',
-    version='1.1.12',
+    version='1.1.13',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
     description='Text to Emoji is a simple tool for converting text into emojis. It returns the emojis that represent the given text.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://apiverve.com',
-    project_urls={
-        'Homepage': 'https://apiverve.com',
-        'Documentation': 'https://docs.apiverve.com/ref/texttoemoji',
-        'Source': 'https://github.com/apiverve/texttoemoji-api',
-        'Bug Tracker': 'https://github.com/apiverve/texttoemoji-api/issues'
-    },
+    url='https://apiverve.com/marketplace/texttoemoji?utm_source=pypi&utm_medium=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
