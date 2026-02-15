@@ -12,7 +12,6 @@ namespace APIVerve.API.TexttoEmoji
     {
         /// <summary>
         /// The text you want converted into emojis
-        /// Example: hello world
         /// </summary>
         [JsonProperty("text")]
         public string Text { get; set; }
