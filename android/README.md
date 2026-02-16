@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:texttoemoji-api:1.1.13'
+    implementation 'com.github.apiverve:texttoemoji-api:1.1.14'
 }
 ```
 
@@ -47,7 +47,7 @@ TexttoEmojiAPIClient client = new TexttoEmojiAPIClient("YOUR_API_KEY");
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("text", "hello world");
+    parameters.put("text", "I am so excited to go to the lake and swim");
 
     // Execute the request
     APIResponse response = client.execute(parameters);
