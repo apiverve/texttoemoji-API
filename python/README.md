@@ -227,8 +227,9 @@ from apiverve_texttoemoji.apiClient import TexttoemojiAPIClient
 
 api = TexttoemojiAPIClient("[YOUR_API_KEY]")
 
+query = { "text": "I am so excited to go to the lake and swim" }
+
 try:
-    query = { "text": "I am so excited to go to the lake and swim" }
     result = api.execute(query)
     print(result)
 finally:
