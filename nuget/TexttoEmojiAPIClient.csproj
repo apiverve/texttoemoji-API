@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net20;net35;net40;net45;netstandard2.0;netstandard2.1;net6.0</TargetFrameworks>
+    <TargetFrameworks>net20;net35;net40;net45;netstandard2.0;netstandard2.1;net6.0;net8.0</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>TexttoEmoji</Title>
-    <Version>1.1.14</Version>
+    <Version>1.2.0</Version>
     <Authors>APIVerve</Authors>
     <Company>APIVerve</Company>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
@@ -17,7 +17,7 @@
     <Description>Text to Emoji is a simple tool for converting text into emojis. It returns the emojis that represent the given text.</Description>
     <RepositoryUrl>https://github.com/apiverve/texttoemoji-api</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>api;rest;http;client;apiverve;wrapper;sdk;api;rest;http;client;apiverve;wrapper;sdk</PackageTags>
+    <PackageTags>text to emoji;text to emoji api;text to emoji tool;text to emoji software;text to emoji service;api;rest;http;client;apiverve;wrapper;sdk</PackageTags>
     <Copyright>©2026 APIVerve. All Rights Reserved</Copyright>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
     <PackageIcon>favicon@128.png</PackageIcon>
